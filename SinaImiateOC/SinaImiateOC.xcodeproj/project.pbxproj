@@ -11,9 +11,9 @@
 		0424C7321D28092900DF3CD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7311D28092900DF3CD2 /* AppDelegate.m */; };
 		0424C73A1D28092900DF3CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0424C7391D28092900DF3CD2 /* Assets.xcassets */; };
 		0424C73D1D28092900DF3CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0424C73B1D28092900DF3CD2 /* LaunchScreen.storyboard */; };
-		0424C7501D280D8600DF3CD2 /* SIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C74F1D280D8600DF3CD2 /* SIMainViewController.m */; };
 		0424C7531D280EED00DF3CD2 /* SINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7521D280EED00DF3CD2 /* SINavigationController.m */; };
 		0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7551D280F0500DF3CD2 /* SIBaseViewController.m */; };
+		0491A88E1D281FA200788CD8 /* SIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A88D1D281FA200788CD8 /* SIMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		0424C7391D28092900DF3CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0424C73C1D28092900DF3CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0424C73E1D28092900DF3CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0424C74E1D280D8600DF3CD2 /* SIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMainViewController.h; sourceTree = "<group>"; };
-		0424C74F1D280D8600DF3CD2 /* SIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMainViewController.m; sourceTree = "<group>"; };
 		0424C7511D280EED00DF3CD2 /* SINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINavigationController.h; sourceTree = "<group>"; };
 		0424C7521D280EED00DF3CD2 /* SINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINavigationController.m; sourceTree = "<group>"; };
 		0424C7541D280F0500DF3CD2 /* SIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBaseViewController.h; sourceTree = "<group>"; };
 		0424C7551D280F0500DF3CD2 /* SIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBaseViewController.m; sourceTree = "<group>"; };
+		0491A88C1D281FA200788CD8 /* SIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMainViewController.h; sourceTree = "<group>"; };
+		0491A88D1D281FA200788CD8 /* SIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +135,7 @@
 		0424C74A1D280D5600DF3CD2 /* Main(主要的) */ = {
 			isa = PBXGroup;
 			children = (
-				0424C74E1D280D8600DF3CD2 /* SIMainViewController.h */,
-				0424C74F1D280D8600DF3CD2 /* SIMainViewController.m */,
+				0491A88B1D281FA200788CD8 /* 主控制器 */,
 				0424C7511D280EED00DF3CD2 /* SINavigationController.h */,
 				0424C7521D280EED00DF3CD2 /* SINavigationController.m */,
 				0424C7541D280F0500DF3CD2 /* SIBaseViewController.h */,
@@ -164,6 +163,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0491A88B1D281FA200788CD8 /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				0491A88C1D281FA200788CD8 /* SIMainViewController.h */,
+				0491A88D1D281FA200788CD8 /* SIMainViewController.m */,
+			);
+			path = "主控制器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */,
-				0424C7501D280D8600DF3CD2 /* SIMainViewController.m in Sources */,
+				0491A88E1D281FA200788CD8 /* SIMainViewController.m in Sources */,
 				0424C7321D28092900DF3CD2 /* AppDelegate.m in Sources */,
 				0424C72F1D28092900DF3CD2 /* main.m in Sources */,
 				0424C7531D280EED00DF3CD2 /* SINavigationController.m in Sources */,
@@ -383,6 +391,7 @@
 				0424C7431D28092900DF3CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
