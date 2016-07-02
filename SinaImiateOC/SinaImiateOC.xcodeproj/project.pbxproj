@@ -14,6 +14,10 @@
 		0424C7531D280EED00DF3CD2 /* SINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7521D280EED00DF3CD2 /* SINavigationController.m */; };
 		0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7551D280F0500DF3CD2 /* SIBaseViewController.m */; };
 		0491A88E1D281FA200788CD8 /* SIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A88D1D281FA200788CD8 /* SIMainViewController.m */; };
+		0491A8911D2876F700788CD8 /* SIDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8901D2876F700788CD8 /* SIDiscoverViewController.m */; };
+		0491A8941D28771300788CD8 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8931D28771300788CD8 /* SIHomeViewController.m */; };
+		0491A8971D28775800788CD8 /* SIMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8961D28775800788CD8 /* SIMessageViewController.m */; };
+		0491A89A1D28777500788CD8 /* SIProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8991D28777500788CD8 /* SIProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,14 @@
 		0424C7551D280F0500DF3CD2 /* SIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBaseViewController.m; sourceTree = "<group>"; };
 		0491A88C1D281FA200788CD8 /* SIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMainViewController.h; sourceTree = "<group>"; };
 		0491A88D1D281FA200788CD8 /* SIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMainViewController.m; sourceTree = "<group>"; };
+		0491A88F1D2876F700788CD8 /* SIDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDiscoverViewController.h; sourceTree = "<group>"; };
+		0491A8901D2876F700788CD8 /* SIDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDiscoverViewController.m; sourceTree = "<group>"; };
+		0491A8921D28771300788CD8 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
+		0491A8931D28771300788CD8 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
+		0491A8951D28775800788CD8 /* SIMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMessageViewController.h; sourceTree = "<group>"; };
+		0491A8961D28775800788CD8 /* SIMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMessageViewController.m; sourceTree = "<group>"; };
+		0491A8981D28777500788CD8 /* SIProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIProfileViewController.h; sourceTree = "<group>"; };
+		0491A8991D28777500788CD8 /* SIProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,8 @@
 		0424C7481D280D5600DF3CD2 /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				0491A88F1D2876F700788CD8 /* SIDiscoverViewController.h */,
+				0491A8901D2876F700788CD8 /* SIDiscoverViewController.m */,
 			);
 			path = "Discover(发现)";
 			sourceTree = "<group>";
@@ -128,6 +142,8 @@
 		0424C7491D280D5600DF3CD2 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				0491A8921D28771300788CD8 /* SIHomeViewController.h */,
+				0491A8931D28771300788CD8 /* SIHomeViewController.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -147,6 +163,8 @@
 		0424C74B1D280D5600DF3CD2 /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				0491A8951D28775800788CD8 /* SIMessageViewController.h */,
+				0491A8961D28775800788CD8 /* SIMessageViewController.m */,
 			);
 			path = "Message(消息)";
 			sourceTree = "<group>";
@@ -154,6 +172,8 @@
 		0424C74C1D280D5600DF3CD2 /* Profile(我) */ = {
 			isa = PBXGroup;
 			children = (
+				0491A8981D28777500788CD8 /* SIProfileViewController.h */,
+				0491A8991D28777500788CD8 /* SIProfileViewController.m */,
 			);
 			path = "Profile(我)";
 			sourceTree = "<group>";
@@ -244,11 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0491A8941D28771300788CD8 /* SIHomeViewController.m in Sources */,
 				0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */,
+				0491A89A1D28777500788CD8 /* SIProfileViewController.m in Sources */,
 				0491A88E1D281FA200788CD8 /* SIMainViewController.m in Sources */,
 				0424C7321D28092900DF3CD2 /* AppDelegate.m in Sources */,
+				0491A8971D28775800788CD8 /* SIMessageViewController.m in Sources */,
 				0424C72F1D28092900DF3CD2 /* main.m in Sources */,
 				0424C7531D280EED00DF3CD2 /* SINavigationController.m in Sources */,
+				0491A8911D2876F700788CD8 /* SIDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
