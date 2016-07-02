@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SIMainViewController.h
 //  SinaImiateOC
 //
 //  Created by xiaoming on 16/7/2.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SIMainViewController : UITabBarController
 
 @end
-
