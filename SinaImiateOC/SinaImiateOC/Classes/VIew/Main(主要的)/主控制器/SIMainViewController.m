@@ -28,10 +28,10 @@
 - (void)addChildControllers {
     
     NSArray *array = @[@{@"clsName": @"SIHomeViewController", @"title": @"首页", @"imageName": @"home"},
-                       @{@"clsName": @"SIMessageViewController", @"title": @"消息", @"imageName": @"home"},
+                       @{@"clsName": @"SIMessageViewController", @"title": @"消息", @"imageName": @"message_center"},
                        @{@"clsName": @""},
-                       @{@"clsName": @"SIDiscoverViewController", @"title": @"发现", @"imageName": @"home"},
-                       @{@"clsName": @"SIProfileViewController", @"title": @"我", @"imageName": @"home"},
+                       @{@"clsName": @"SIDiscoverViewController", @"title": @"发现", @"imageName": @"discover"},
+                       @{@"clsName": @"SIProfileViewController", @"title": @"我", @"imageName": @"profile"},
                        ];
     
     NSMutableArray *arrayM = [NSMutableArray array];
