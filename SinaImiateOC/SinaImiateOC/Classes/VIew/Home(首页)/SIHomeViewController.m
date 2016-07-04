@@ -6,6 +6,7 @@
 //
 
 #import "SIHomeViewController.h"
+#import "SIDemoViewController.h"
 
 @interface SIHomeViewController ()
 
@@ -15,22 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 左侧好友barButtonItem的监听方法
+- (void)showFriends {
+    
+    SIDemoViewController *vc = [SIDemoViewController new];
+    
+    vc.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 设置界面
+- (void)setupUI {
+    [super setupUI];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"好友" style:UIBarButtonItemStylePlain target:self action:@selector(showFriends)];
+    
 }
-*/
 
 @end

@@ -29,6 +29,7 @@
 		0499E8E41D2A3D9400F3DCBF /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8D61D2A3D9400F3DCBF /* UIScreen+CZAddition.m */; };
 		0499E8E51D2A3D9400F3DCBF /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8D81D2A3D9400F3DCBF /* UIView+CZAddition.m */; };
 		0499E8E61D2A3D9400F3DCBF /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8DA1D2A3D9400F3DCBF /* UIViewController+CZAddition.m */; };
+		0499E8EA1D2A4B7F00F3DCBF /* SIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8E91D2A4B7F00F3DCBF /* SIDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		0499E8D81D2A3D9400F3DCBF /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
 		0499E8D91D2A3D9400F3DCBF /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		0499E8DA1D2A3D9400F3DCBF /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		0499E8E81D2A4B7F00F3DCBF /* SIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDemoViewController.h; sourceTree = "<group>"; };
+		0499E8E91D2A4B7F00F3DCBF /* SIDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 		0424C7491D280D5600DF3CD2 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				0499E8E71D2A4B5F00F3DCBF /* Demo(好友实例) */,
 				0491A8921D28771300788CD8 /* SIHomeViewController.h */,
 				0491A8931D28771300788CD8 /* SIHomeViewController.m */,
 			);
@@ -261,6 +265,15 @@
 				0499E8DA1D2A3D9400F3DCBF /* UIViewController+CZAddition.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		0499E8E71D2A4B5F00F3DCBF /* Demo(好友实例) */ = {
+			isa = PBXGroup;
+			children = (
+				0499E8E81D2A4B7F00F3DCBF /* SIDemoViewController.h */,
+				0499E8E91D2A4B7F00F3DCBF /* SIDemoViewController.m */,
+			);
+			path = "Demo(好友实例)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +362,7 @@
 				0424C7531D280EED00DF3CD2 /* SINavigationController.m in Sources */,
 				0499E8E41D2A3D9400F3DCBF /* UIScreen+CZAddition.m in Sources */,
 				0491A8911D2876F700788CD8 /* SIDiscoverViewController.m in Sources */,
+				0499E8EA1D2A4B7F00F3DCBF /* SIDemoViewController.m in Sources */,
 				0499E8E11D2A3D9400F3DCBF /* UIButton+CZAddition.m in Sources */,
 				0499E8E61D2A3D9400F3DCBF /* UIViewController+CZAddition.m in Sources */,
 				0499E8DD1D2A3D9400F3DCBF /* NSObject+CZRuntime.m in Sources */,

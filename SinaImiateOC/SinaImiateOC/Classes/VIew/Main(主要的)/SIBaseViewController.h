@@ -10,4 +10,6 @@
 
 @interface SIBaseViewController : UIViewController
 
+- (void)setupUI;
+
 @end

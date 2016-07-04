@@ -52,9 +52,17 @@
     
     _composeButton.frame = CGRectInset(self.tabBar.bounds, 2 * w, 0);
     
+    [_composeButton addTarget:self action:@selector(clickComposeBtn) forControlEvents:UIControlEventTouchUpInside];
     
     
-    
+}
+
+/**
+ *  按钮监听方法
+ *
+*/
+- (void)clickComposeBtn {
+    NSLog(@"撰写微博");
 }
 
 #pragma mark - 搭建子控制器数组
