@@ -10,6 +10,8 @@
 
 @interface SIMainViewController ()
 
+@property (nonatomic, strong) UIButton *composeButton;
+
 @end
 
 @implementation SIMainViewController
@@ -21,6 +23,37 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self addChildControllers];
+    
+    [self setupComposeButton];
+    
+}
+
+#pragma mark - 设置中间撰写按钮
+/**
+ *  懒加载
+ */
+- (UIButton *)composeButton {
+    if (_composeButton == nil) {
+        UIButton *btn = [UIButton cz_imageButton:@"tabbar_compose_icon_add" backgroundImageName:@"tabbar_compose_button"];
+        
+        _composeButton = btn;
+    }
+    
+    return _composeButton;
+}
+
+- (void)setupComposeButton {
+    
+    [self.tabBar addSubview:self.composeButton];
+    
+    CGFloat count = self.childViewControllers.count;
+    
+    NSInteger w = self.tabBar.bounds.size.width / count - 1;
+    
+    _composeButton.frame = CGRectInset(self.tabBar.bounds, 2 * w, 0);
+    
+    
+    
     
 }
 

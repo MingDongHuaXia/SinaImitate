@@ -1,0 +1,14 @@
+//
+//  SinaImiateCommon.pch
+//  SinaImiateOC
+//
+//  Created by xiaoming on 16/7/4.
+//  Copyright © 2016年 GoodJob. All rights reserved.
+//
+
+#if __OBJC__
+
+#import "CZAdditions.h"
+
+
+#endif
