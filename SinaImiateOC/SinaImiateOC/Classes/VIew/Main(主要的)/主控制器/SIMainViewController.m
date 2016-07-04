@@ -18,12 +18,60 @@
     [super viewDidLoad];
     
     
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self addChildControllers];
+    
+}
+
+#pragma mark - 搭建子控制器数组
+- (void)addChildControllers {
+    
+    NSArray *array = @[@{@"clsName": @"SIHomeViewController", @"title": @"首页", @"imageName": @"home"},
+                       @{@"clsName": @"SIMessageViewController", @"title": @"消息", @"imageName": @"home"},
+                       @{@"clsName": @""},
+                       @{@"clsName": @"SIDiscoverViewController", @"title": @"发现", @"imageName": @"home"},
+                       @{@"clsName": @"SIProfileViewController", @"title": @"我", @"imageName": @"home"},
+                       ];
+    
+    NSMutableArray *arrayM = [NSMutableArray array];
+    
+    for (NSDictionary *dict in array) {
+        
+        [arrayM addObject:[self setupSingleControllerWithDict:dict]];
+        
+    }
+    
+    
+    self.viewControllers = arrayM.copy;
     
     
 }
 
-
+#pragma mark - 添加一个控制器
+- (UIViewController *)setupSingleControllerWithDict:(NSDictionary *)dict {
+    
+    NSString *clsName = dict[@"clsName"];
+    
+    if (clsName == nil) {
+        return [UIViewController new];
+    }
+    
+    Class cls = NSClassFromString(clsName);
+    
+    UIViewController *vc = [cls new];
+    
+    vc.title = dict[@"title"];
+    
+    NSString *imageName = dict[@"imageName"];
+    
+    vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@", imageName]];
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@_selected", imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    
+    return [[UINavigationController alloc] initWithRootViewController:vc];
+    
+}
 
 
 @end
