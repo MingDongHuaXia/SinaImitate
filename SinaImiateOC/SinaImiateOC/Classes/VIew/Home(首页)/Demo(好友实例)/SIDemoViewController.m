@@ -34,7 +34,12 @@
     
     self.view.backgroundColor = [UIColor cyanColor];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(pushNext)];
+//    UIButton *btn = [UIButton cz_textButton:@"下一个" fontSize:16 normalColor:[UIColor darkGrayColor] highlightedColor:[UIColor orangeColor]];
+//    [btn addTarget:self action:@selector(pushNext) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];  //[[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(pushNext)];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"下一个" fontSize:16 target:self action:@selector(pushNext)];
     
 }
 

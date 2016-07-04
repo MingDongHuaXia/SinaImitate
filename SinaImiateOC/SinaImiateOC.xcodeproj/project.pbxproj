@@ -30,6 +30,7 @@
 		0499E8E51D2A3D9400F3DCBF /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8D81D2A3D9400F3DCBF /* UIView+CZAddition.m */; };
 		0499E8E61D2A3D9400F3DCBF /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8DA1D2A3D9400F3DCBF /* UIViewController+CZAddition.m */; };
 		0499E8EA1D2A4B7F00F3DCBF /* SIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8E91D2A4B7F00F3DCBF /* SIDemoViewController.m */; };
+		0499E8F41D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8F31D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,8 @@
 		0499E8DA1D2A3D9400F3DCBF /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		0499E8E81D2A4B7F00F3DCBF /* SIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDemoViewController.h; sourceTree = "<group>"; };
 		0499E8E91D2A4B7F00F3DCBF /* SIDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDemoViewController.m; sourceTree = "<group>"; };
+		0499E8F21D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SIAddition.h"; sourceTree = "<group>"; };
+		0499E8F31D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SIAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 		0424C7441D280D5600DF3CD2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0499E8F11D2A6A1700F3DCBF /* Categatory */,
 				0424C7451D280D5600DF3CD2 /* Model */,
 				0424C7461D280D5600DF3CD2 /* Tools */,
 				0424C7471D280D5600DF3CD2 /* VIew */,
@@ -276,6 +280,15 @@
 			path = "Demo(好友实例)";
 			sourceTree = "<group>";
 		};
+		0499E8F11D2A6A1700F3DCBF /* Categatory */ = {
+			isa = PBXGroup;
+			children = (
+				0499E8F21D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.h */,
+				0499E8F31D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.m */,
+			);
+			path = Categatory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +363,7 @@
 				0499E8DE1D2A3D9400F3DCBF /* NSString+CZBase64.m in Sources */,
 				0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */,
 				0499E8E21D2A3D9400F3DCBF /* UIColor+CZAddition.m in Sources */,
+				0499E8F41D2A6A1700F3DCBF /* UIBarButtonItem+SIAddition.m in Sources */,
 				0491A89A1D28777500788CD8 /* SIProfileViewController.m in Sources */,
 				0491A88E1D281FA200788CD8 /* SIMainViewController.m in Sources */,
 				0424C7321D28092900DF3CD2 /* AppDelegate.m in Sources */,

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
 }
 
 #pragma mark - 左侧好友barButtonItem的监听方法
@@ -35,7 +36,8 @@
 - (void)setupUI {
     [super setupUI];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"好友" style:UIBarButtonItemStylePlain target:self action:@selector(showFriends)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"好友" fontSize:16 target:self action:@selector(showFriends)];
+    
     
 }
 
