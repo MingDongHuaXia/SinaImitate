@@ -7,6 +7,7 @@
 //
 
 #import "SIMainViewController.h"
+#import "SINavigationController.h"
 
 @interface SIMainViewController ()
 
@@ -106,14 +107,15 @@
     
     NSString *imageName = dict[@"imageName"];
     
+    
     vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@", imageName]];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@_selected", imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [vc.tabBarItem setTitleTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:13]} forState:UIControlStateNormal];
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor orangeColor]} forState:UIControlStateHighlighted];
+    [vc.tabBarItem setTitleTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12]} forState:UIControlStateNormal];
+//    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor orangeColor]} forState:UIControlStateHighlighted];
     
     
-    return [[UINavigationController alloc] initWithRootViewController:vc];
+    return [[SINavigationController alloc] initWithRootViewController:vc];
     
 }
 

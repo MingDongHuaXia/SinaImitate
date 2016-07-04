@@ -10,6 +10,10 @@
 
 @interface SIBaseViewController : UIViewController
 
+@property (nonatomic, strong) UINavigationBar *navigationBar;
+
+@property (nonatomic, strong) UINavigationItem *navItem;
+
 - (void)setupUI;
 
 @end

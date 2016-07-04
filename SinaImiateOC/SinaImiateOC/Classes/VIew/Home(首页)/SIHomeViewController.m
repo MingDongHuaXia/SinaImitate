@@ -20,12 +20,13 @@
     
 }
 
+
 #pragma mark - 左侧好友barButtonItem的监听方法
 - (void)showFriends {
     
     SIDemoViewController *vc = [SIDemoViewController new];
     
-    vc.hidesBottomBarWhenPushed = YES;
+//    vc.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:vc animated:YES];
     

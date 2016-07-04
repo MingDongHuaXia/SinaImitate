@@ -16,15 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationBar.hidden = YES;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     [super pushViewController:viewController animated:animated];
     
-    if (self.childViewControllers.count > 0) {
-        
-        viewController.hidesBottomBarWhenPushed = true;
+    if (self.childViewControllers.count > 1) {
+#warning 暂时留个坑,一会过来解决
+        viewController.hidesBottomBarWhenPushed = YES;
         
     }
     
