@@ -17,7 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = [NSString stringWithFormat:@"第 %zd 个", self.navigationController.childViewControllers.count - 1];
     
+}
+
+#pragma mark - 右侧barButtonItem的监听方法 pushNext
+- (void)pushNext {
+    SIDemoViewController *vc = [SIDemoViewController new];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 设置界面
@@ -25,7 +33,12 @@
     [super setupUI];
     
     self.view.backgroundColor = [UIColor cyanColor];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(pushNext)];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
