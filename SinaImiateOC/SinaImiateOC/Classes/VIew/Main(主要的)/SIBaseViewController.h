@@ -25,4 +25,9 @@
  */
 - (void)setupUI;
 
+/**
+ *  表格视图
+ */
+@property (nonatomic, strong) UITableView *tableView;
+
 @end

@@ -53,6 +53,17 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupNavigationBar];
+    
+    [self setupTableView];
+    
+}
+
+#pragma mark - 设置表格视图
+- (void)setupTableView {
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    [self.view insertSubview:_tableView belowSubview:_navigationBar];
 }
 
 #pragma mark - 设置导航条
