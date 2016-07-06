@@ -55,6 +55,8 @@
     [self.view addSubview:self.navigationBar];
     
     self.navigationBar.items = @[self.navItem];
+    // 设置navBar的渲染颜色
+    self.navigationBar.barTintColor = [UIColor cz_colorWithHex:0xF6F6F6];
 }
 
 #pragma mark - 
