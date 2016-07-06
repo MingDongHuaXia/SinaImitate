@@ -10,6 +10,6 @@
 
 @interface UIBarButtonItem (SIAddition)
 
-+ (instancetype)cz_textBarButtonItem:(NSString *)title fontSize:(CGFloat)fontSize target:(id)target action:(SEL)action;
++ (instancetype)cz_textBarButtonItem:(NSString *)title fontSize:(CGFloat)fontSize target:(id)target action:(SEL)action isBack:(BOOL)back;
 
 @end

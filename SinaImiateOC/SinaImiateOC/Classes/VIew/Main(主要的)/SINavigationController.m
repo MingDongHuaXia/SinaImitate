@@ -42,7 +42,7 @@
             SIBaseViewController *vc = (SIBaseViewController *)viewController;
             
             
-            vc.navItem.leftBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"返回" fontSize:16 target:self action:@selector(popVC)];
+            vc.navItem.leftBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"返回" fontSize:16 target:self action:@selector(popVC) isBack:YES];
             
         }
         

@@ -41,7 +41,7 @@
 //    
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];  //[[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(pushNext)];
     
-    self.navItem.rightBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"下一个" fontSize:16 target:self action:@selector(pushNext)];
+    self.navItem.rightBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"下一个" fontSize:16 target:self action:@selector(pushNext) isBack:NO];
     
 }
 

@@ -57,6 +57,9 @@
     self.navigationBar.items = @[self.navItem];
     // 设置navBar的渲染颜色
     self.navigationBar.barTintColor = [UIColor cz_colorWithHex:0xF6F6F6];
+    // 设置navBar的字体颜色
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+    
 }
 
 #pragma mark - 

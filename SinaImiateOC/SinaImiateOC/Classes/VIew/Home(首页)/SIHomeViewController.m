@@ -37,7 +37,7 @@
 - (void)setupUI {
     [super setupUI];
     
-    self.navItem.leftBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"好友" fontSize:16 target:self action:@selector(showFriends)];
+    self.navItem.leftBarButtonItem = [UIBarButtonItem cz_textBarButtonItem:@"好友" fontSize:16 target:self action:@selector(showFriends) isBack:NO];
     
     
 }
