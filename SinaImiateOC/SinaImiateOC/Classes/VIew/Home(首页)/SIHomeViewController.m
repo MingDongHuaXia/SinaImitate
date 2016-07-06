@@ -26,7 +26,7 @@
     
     SIDemoViewController *vc = [SIDemoViewController new];
     
-//    vc.hidesBottomBarWhenPushed = YES;
+    vc.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:vc animated:YES];
     

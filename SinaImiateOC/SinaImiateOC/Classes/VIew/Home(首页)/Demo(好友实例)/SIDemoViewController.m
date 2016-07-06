@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = [NSString stringWithFormat:@"第 %zd 个", self.navigationController.childViewControllers.count - 1];
+    self.navItem.title = [NSString stringWithFormat:@"第 %zd 个", self.navigationController.childViewControllers.count - 1];
+    
+
     
 }
 
