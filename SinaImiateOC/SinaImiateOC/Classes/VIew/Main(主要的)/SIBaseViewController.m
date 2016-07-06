@@ -52,6 +52,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self setupNavigationBar];
+}
+
+#pragma mark - 设置导航条
+- (void)setupNavigationBar {
+    
     [self.view addSubview:self.navigationBar];
     
     self.navigationBar.items = @[self.navItem];
@@ -59,9 +65,6 @@
     self.navigationBar.barTintColor = [UIColor cz_colorWithHex:0xF6F6F6];
     // 设置navBar的字体颜色
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor darkGrayColor]};
-    
 }
-
-#pragma mark - 
 
 @end
