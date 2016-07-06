@@ -29,6 +29,17 @@
     
 }
 
+#pragma mark - 设备支持方向
+/**
+ *  设备支持方向 在此设置 本类及其所有关联的类都会被统一设置  需要特殊设置的课单独改变
+ *
+ *  @return portrait 竖屏  landScape 横屏 
+ */
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 #pragma mark - 设置中间撰写按钮
 /**
  *  懒加载
