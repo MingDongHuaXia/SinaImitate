@@ -8,7 +8,7 @@
 
 #import "SIBaseViewController.h"
 
-@interface SIBaseViewController ()
+@interface SIBaseViewController () <UITableViewDelegate, UITableViewDataSource>
 
 
 
@@ -64,6 +64,9 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     [self.view insertSubview:_tableView belowSubview:_navigationBar];
+    
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 }
 
 #pragma mark - 设置导航条
@@ -78,4 +81,17 @@
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor darkGrayColor]};
 }
 
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    return [UITableViewCell new];
+}
+
 @end
+
+
