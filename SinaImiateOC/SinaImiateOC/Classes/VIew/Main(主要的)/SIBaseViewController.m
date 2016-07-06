@@ -21,6 +21,7 @@
     
     [self setupUI];
     
+    [self loadData];
 }
 
 #pragma mark - 懒加载
@@ -44,8 +45,10 @@
     return _navItem;
 }
 
-#pragma mark - 重写title的setter方法
-
+#pragma mark - loadData
+- (void)loadData {
+    
+}
 
 #pragma mark - 设置界面
 - (void)setupUI {
