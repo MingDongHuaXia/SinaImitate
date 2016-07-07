@@ -30,4 +30,9 @@
  */
 @property (nonatomic, strong) UITableView *tableView;
 
+/**
+ *  加载数据
+ */
+- (void)loadData;
+
 @end

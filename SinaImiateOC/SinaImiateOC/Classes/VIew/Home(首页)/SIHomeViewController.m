@@ -8,6 +8,8 @@
 #import "SIHomeViewController.h"
 #import "SIDemoViewController.h"
 
+static NSString *cellId = @"cellId";
+
 @interface SIHomeViewController ()
 
 @end
@@ -16,6 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+}
+
+#pragma mark - loadData
+- (void)loadData {
+    
     
     
 }
