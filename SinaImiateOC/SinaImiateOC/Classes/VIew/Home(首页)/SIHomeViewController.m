@@ -22,12 +22,17 @@ static NSString *cellId = @"cellId";
     [super viewDidLoad];
     
     
+    
 }
+
+
 
 #pragma mark - loadData
 - (void)loadData {
     
-    for (NSInteger i = 0; i < 10; i++) {
+    _statusList = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < 20; i++) {
         
         [_statusList insertObject:@(i).description atIndex:0];
     }
