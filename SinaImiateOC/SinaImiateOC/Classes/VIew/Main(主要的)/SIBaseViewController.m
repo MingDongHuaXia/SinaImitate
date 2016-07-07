@@ -8,7 +8,7 @@
 
 #import "SIBaseViewController.h"
 
-@interface SIBaseViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface SIBaseViewController () 
 
 
 
