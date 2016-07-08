@@ -55,6 +55,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.automaticallyAdjustsScrollViewInsets = false;
+    
     [self setupNavigationBar];
     
     [self setupTableView];
@@ -70,6 +72,8 @@
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(self.navigationBar.bounds.size.height, 0, self.tabBarController.tabBar.bounds.size.height, 0);
 }
 
 #pragma mark - 设置导航条
