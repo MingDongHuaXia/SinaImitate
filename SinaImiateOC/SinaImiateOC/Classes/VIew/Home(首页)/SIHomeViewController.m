@@ -73,6 +73,10 @@ static NSString *cellId = @"cellId";
 #pragma mark - UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    if (_statusList.count == 0) {
+        return 0;
+    }
+    
     return _statusList.count;
 }
 
@@ -80,7 +84,11 @@ static NSString *cellId = @"cellId";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
-    cell.textLabel.text = _statusList[indexPath.row];
+    if (_statusList.count != 0) {
+        
+        cell.textLabel.text = _statusList[indexPath.row];
+    }
+    
     
     return cell;
 }
