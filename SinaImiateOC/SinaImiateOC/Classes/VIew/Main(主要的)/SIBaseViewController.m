@@ -74,6 +74,13 @@
     _tableView.dataSource = self;
     
     self.tableView.contentInset = UIEdgeInsetsMake(self.navigationBar.bounds.size.height, 0, self.tabBarController.tabBar.bounds.size.height, 0);
+    
+    _refreshControl = [UIRefreshControl new];
+    
+    [self.tableView addSubview:_refreshControl];
+    
+    [_refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
+    
 }
 
 #pragma mark - 设置导航条

@@ -14,6 +14,7 @@ static NSString *cellId = @"cellId";
 
 @property (nonatomic, strong) NSMutableArray *statusList;
 
+
 @end
 
 @implementation SIHomeViewController
@@ -22,25 +23,42 @@ static NSString *cellId = @"cellId";
     [super viewDidLoad];
     
     
-    
 }
 
 
 
 #pragma mark - loadData
+/**
+ *  加载数据
+ */
 - (void)loadData {
     
     _statusList = [NSMutableArray array];
     
-    for (NSInteger i = 0; i < 20; i++) {
+    NSLog(@"开始加载数据");
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [_statusList insertObject:@(i).description atIndex:0];
-    }
+        for (NSInteger i = 0; i < 20; i++) {
+            
+            [_statusList insertObject:@(i).description atIndex:0];
+        }
+        NSLog(@"刷新表格");
+        
+        [self.refreshControl endRefreshing];
+        
+        [self.tableView reloadData];
+        
+    });
+    
     
 }
 
 
 #pragma mark - 左侧好友barButtonItem的监听方法
+/**
+ *  左侧好友按钮监听方法
+ */
 - (void)showFriends {
     
     SIDemoViewController *vc = [SIDemoViewController new];

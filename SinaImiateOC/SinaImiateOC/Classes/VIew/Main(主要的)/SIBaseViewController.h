@@ -33,5 +33,9 @@
  *  加载数据
  */
 - (void)loadData;
+/**
+ *  下拉刷新控件
+ */
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
