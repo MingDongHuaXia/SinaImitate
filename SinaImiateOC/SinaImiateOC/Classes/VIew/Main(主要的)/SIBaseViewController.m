@@ -106,6 +106,31 @@
     return [UITableViewCell new];
 }
 
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //取当前行
+    NSInteger row = indexPath.row;
+    //取最后一组
+    NSInteger section = self.tableView.numberOfSections - 1;
+    
+    if (row < 0 || section < 0) {
+        
+        return;
+    }
+    /**
+     *  最后一组的行数
+     */
+    NSInteger count = [self.tableView numberOfRowsInSection:section];
+    
+    if (row == count - 1 && !_isPullup) {
+        
+        NSLog(@"上拉刷新");
+    }
+    
+    
+}
+
 @end
 
 

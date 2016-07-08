@@ -37,5 +37,9 @@
  *  下拉刷新控件
  */
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+/**
+ *  上拉刷新标记
+ */
+@property (nonatomic, assign) BOOL isPullup;
 
 @end
