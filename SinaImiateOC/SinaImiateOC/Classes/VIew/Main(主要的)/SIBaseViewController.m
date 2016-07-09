@@ -126,6 +126,10 @@
     if (row == count - 1 && !_isPullup) {
         
         NSLog(@"上拉刷新");
+        
+        _isPullup = true;
+        
+        [self loadData];
     }
     
     

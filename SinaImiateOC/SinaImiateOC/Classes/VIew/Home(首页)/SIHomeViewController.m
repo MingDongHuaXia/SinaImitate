@@ -41,6 +41,10 @@ static NSString *cellId = @"cellId";
         
         for (NSInteger i = 0; i < 20; i++) {
             
+            if (self.isPullup) {
+                [self.statusList addObject:[NSString stringWithFormat:@"上拉 %zd", i]];
+            }
+            
             [_statusList insertObject:@(i).description atIndex:0];
         }
         NSLog(@"刷新表格");
