@@ -42,4 +42,9 @@
  */
 @property (nonatomic, assign) BOOL isPullup;
 
+/**
+ *  用户登录标记,来决定用户登陆后的界面
+ */
+@property (nonatomic, assign) BOOL userLogon;
+
 @end

@@ -24,6 +24,15 @@
     [self loadData];
 }
 
+/**
+ *  userLogon的初始值
+ *
+ */
+- (BOOL)userLogon {
+    
+    return false;
+}
+
 #pragma mark - 懒加载
 - (UINavigationBar *)navigationBar {
     if (_navigationBar == nil) {
@@ -63,7 +72,21 @@
     
     [self setupNavigationBar];
     
-    [self setupTableView];
+//    [self setupTableView];
+    
+    self.userLogon ? [self setupTableView] : [self setupVisitorView];
+    
+}
+
+#pragma mark - 设置访客视图
+- (void)setupVisitorView {
+    
+    UIView *visitorView = [[UIView alloc] initWithFrame:self.view.bounds];
+    
+    visitorView.backgroundColor = [UIColor orangeColor];
+    
+    [self.view insertSubview:visitorView belowSubview:_navigationBar];
+    
     
 }
 
