@@ -48,6 +48,10 @@
 #pragma mark - loadData
 - (void)loadData {
     
+    /**
+     *  如果子类不实现任何方法, 默认关闭刷新控件
+     */
+    [_refreshControl endRefreshing];
 }
 
 #pragma mark - 设置界面
