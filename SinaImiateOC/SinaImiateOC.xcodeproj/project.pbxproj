@@ -17,6 +17,7 @@
 		0491A8941D28771300788CD8 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8931D28771300788CD8 /* SIHomeViewController.m */; };
 		0491A8971D28775800788CD8 /* SIMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8961D28775800788CD8 /* SIMessageViewController.m */; };
 		0491A89A1D28777500788CD8 /* SIProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491A8991D28777500788CD8 /* SIProfileViewController.m */; };
+		04968EB71D33352C00ACE907 /* SIVisitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04968EB61D33352C00ACE907 /* SIVisitorView.m */; };
 		0499E8DB1D2A3D9400F3DCBF /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8C41D2A3D9400F3DCBF /* NSArray+Log.m */; };
 		0499E8DC1D2A3D9400F3DCBF /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8C61D2A3D9400F3DCBF /* NSAttributedString+CZAdditon.m */; };
 		0499E8DD1D2A3D9400F3DCBF /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499E8C81D2A3D9400F3DCBF /* NSObject+CZRuntime.m */; };
@@ -54,6 +55,8 @@
 		0491A8961D28775800788CD8 /* SIMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMessageViewController.m; sourceTree = "<group>"; };
 		0491A8981D28777500788CD8 /* SIProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIProfileViewController.h; sourceTree = "<group>"; };
 		0491A8991D28777500788CD8 /* SIProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIProfileViewController.m; sourceTree = "<group>"; };
+		04968EB51D33352C00ACE907 /* SIVisitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIVisitorView.h; sourceTree = "<group>"; };
+		04968EB61D33352C00ACE907 /* SIVisitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIVisitorView.m; sourceTree = "<group>"; };
 		0499E8C01D2A3CDA00F3DCBF /* SinaImiateCommon.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaImiateCommon.pch; sourceTree = "<group>"; };
 		0499E8C21D2A3D9400F3DCBF /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		0499E8C31D2A3D9400F3DCBF /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		0424C74A1D280D5600DF3CD2 /* Main(主要的) */ = {
 			isa = PBXGroup;
 			children = (
+				04968EB41D33350900ACE907 /* VisitorView */,
 				0491A88B1D281FA200788CD8 /* 主控制器 */,
 				0424C7511D280EED00DF3CD2 /* SINavigationController.h */,
 				0424C7521D280EED00DF3CD2 /* SINavigationController.m */,
@@ -237,6 +241,15 @@
 				0491A88D1D281FA200788CD8 /* SIMainViewController.m */,
 			);
 			path = "主控制器";
+			sourceTree = "<group>";
+		};
+		04968EB41D33350900ACE907 /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				04968EB51D33352C00ACE907 /* SIVisitorView.h */,
+				04968EB61D33352C00ACE907 /* SIVisitorView.m */,
+			);
+			path = VisitorView;
 			sourceTree = "<group>";
 		};
 		0499E8C11D2A3D9400F3DCBF /* Additions */ = {
@@ -359,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0491A8941D28771300788CD8 /* SIHomeViewController.m in Sources */,
+				04968EB71D33352C00ACE907 /* SIVisitorView.m in Sources */,
 				0499E8E01D2A3D9400F3DCBF /* NSString+CZPath.m in Sources */,
 				0499E8DE1D2A3D9400F3DCBF /* NSString+CZBase64.m in Sources */,
 				0424C7561D280F0500DF3CD2 /* SIBaseViewController.m in Sources */,

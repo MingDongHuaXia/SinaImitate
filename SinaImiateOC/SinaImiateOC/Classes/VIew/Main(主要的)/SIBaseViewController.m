@@ -7,6 +7,7 @@
 //
 
 #import "SIBaseViewController.h"
+#import "SIVisitorView.h"
 
 @interface SIBaseViewController () 
 
@@ -81,9 +82,9 @@
 #pragma mark - 设置访客视图
 - (void)setupVisitorView {
     
-    UIView *visitorView = [[UIView alloc] initWithFrame:self.view.bounds];
+    SIVisitorView *visitorView = [[SIVisitorView alloc] initWithFrame:self.view.bounds];
     
-    visitorView.backgroundColor = [UIColor orangeColor];
+    
     
     [self.view insertSubview:visitorView belowSubview:_navigationBar];
     

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class SIVisitorView;
+
 @interface SIBaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 /**
  *  自定义导航条
